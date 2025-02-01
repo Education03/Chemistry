@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahidsiyal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Body font size relative to the root element */
+        body {
+            font-size: 1rem; /* 1rem is equal to 16px (default) */
+            line-height: 1.5;
+			 margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar specific styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+			padding-right: 3rem;
+            background-color: #e11d48; /* Crimson color */
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem; /* Increased font size for the logo */
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-grow: 1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            font-size: 1.25rem; /* Increased size for list items */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+       .navbar a:hover {
+            background-color: #9b1d38;
+            border-radius: 0.25rem;
+        }
+
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .navbar .dropbtn {
+            background-color: DodgerBlue;
+            color: white;
+            padding: 0.75rem 1.25rem; /* Relative padding */
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropbtn:hover {
+            background-color: #2980b9;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c0392b;
+            min-width: 10rem; /* Relative width */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0.625rem 0; /* Relative padding */
+            z-index: 1;
+        }
+
+        .navbar .dropdown-content a {
+            color: white;
+            padding: 0.75rem 1rem; /* Relative padding */
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background-color: #e74c3c;
+        }
+
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem 1.25rem; /* Adjust for mobile */
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1.5rem; /* Add space between nav items */
+            }
+
+            li {
+                margin: 1rem 0;
+            }
+
+            .navbar .dropdown-content {
+                position: static;
+                width: 100%;
+                box-shadow: none;
+            }
+
+            .navbar .dropbtn {
+                width: 100%;
+                text-align: left;
+                padding: 1rem; /* Full-width button for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="ChemistryWithMe.html">ChemistryWithMe</a>
+        </div>
+        <ul>
+            <li><a href="HOME.html">HOME</a></li>
+            <li><a href="ONLINE-TEST.html">ONLINE TEST</a></li>
+            <li><a href="TEST-PDF.html">TEST PDF</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+            <li><a href="ABOUT.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <!-- Dropdown Navbar -->
+    <div class="navbar" style="background-color: DodgerBlue; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 0.75rem 1.25rem; margin-bottom: 1.25rem; display: flex; justify-content: center; align-items: center;">
+        <!-- Dropdown for Chemistry 9 -->
+        <div class="dropdown">
+            <button class="dropbtn">9.CHEMISTRY</button>
+            <div class="dropdown-content">
+			     <a href="https://drive.google.com/file/d/1jNcT-0jCYIGWI3Jqt6-WQScdR4x4lI6y/view" target="_self">Ch#1</a>
+                <a href="https://drive.google.com/file/d/1v6BZqR_gQO_7GQ6rIlA2nsPyn14wBbZC/view?usp=sharing" target="_self">Ch#2</a>
+				<a href="https://drive.google.com/file/d/1bjeofokynFysCflGjTIxykxQqepLrR6c/view?usp=sharing" target="_self">Ch#3</a>
+				<a href="https://drive.google.com/file/d/14wkEG8cZbeAIG4lE516LCx3t1ampNCBx/view?usp=sharing" target="_self">Ch#4</a>
+				<a href="https://drive.google.com/file/d/1jOJg0psRAJWq8iU5T6hQnPbugCgJgezs/view?usp=sharing" target="_self">Ch#5 & 6</a>
+				<a href="https://drive.google.com/file/d/12TXQsjv1-6JpO4QvMsH943ATX1R1B-Zx/view?usp=sharing" target="_self">Ch#7</a>
+				<a href="https://drive.google.com/file/d/1RFfVCDe1bWQfAQciBYa9D1qXj7FYQp6j/view?usp=sharing" target="_self">Ch#8</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for Chemistry 10 -->
+        <div class="dropdown">
+            <button class="dropbtn">10.CHEMISTRY</button>
+            <div class="dropdown-content">
+			<a href="https://drive.google.com/file/d/1cve0sJnH9k02UQdHVFE-y8cIvLh0onfU/view?usp=sharing" target="_self">Ch#1</a>
+			<a href="https://drive.google.com/file/d/1jl6oS3AG6Vh_NGbudn_qEdhDaCN3zo1Y/view?usp=sharing" target="_self">Ch#2</a>
+			<a href="https://drive.google.com/file/d/1jPOMCbNuTGGjOSwujvVHLUsQGQ7BWoh8/view?usp=sharing" target="_self">Ch#3</a>
+			<a href="https://drive.google.com/file/d/1TEGm_Ij8t9BAEsR9mSd5m3bgw4jNEX7S/view?usp=sharing" target="_self">Ch#4</a>
+		
+			<a href="https://drive.google.com/file/d/1MHr-dhFP_xCEEOMTsFVrJESgqGg16Ij1/view?usp=sharing" target="_self">Ch#6</a>
+				
+            </div>
+        </div>
+
+        <!-- Dropdown for Chemistry 11 -->
+        <div class="dropdown">
+            <button class="dropbtn">11.CHEMISTRY</button>
+            <div class="dropdown-content">
+                <a href="https://drive.google.com/file/d/1dix-UIbH8glRs4yTnBGoN8zN1T3ADD4L/view?usp=sharing" target="_self">ch#1</a>
+				<a href="https://drive.google.com/file/d/1gADpysVsI2kPv5UdlhUIBrqAjvq1SyaQ/view?usp=sharing" target="_self">Ch#2</a>
+				<a href="https://drive.google.com/file/d/1kU5vAneNdeuaIgHl9h2wFqCGhQjMADxT/view?usp=sharing" target="_self">Ch#3</a>
+				<a href="https://drive.google.com/file/d/1DsA7l7ZKuKTTnJL8ztirt3W2STpaSJ4K/view?usp=sharing" target="_self">Ch#4</a>
+				<a href="https://drive.google.com/file/d/1Ny3bZcfCEjiuceBj0NQ4TokNtGfwx6qP/view?usp=sharing" target="_self">Ch#5</a>
+				<a href="https://drive.google.com/file/d/1vKvoNsZOl7EG6WkmiPi12WKkuuJ1XQrX/view?usp=sharing" target="_self">Ch#6</a>
+				<a href="https://drive.google.com/file/d/1VyfNkjJG3fjlQIxwwRwGVKseNxqx3rii/view?usp=sharing" target="_self">Ch#7</a>
+				<a href="https://drive.google.com/file/d/1F8EIwymbIIcgD5TA1zDrv7bile4qzvmZ/view?usp=sharing" target="_self">Ch#8</a>
+				<a href="https://drive.google.com/file/d/1S8eUeW4Yx42onaZIlDxSLopWtckwRA8z/view?usp=sharing" target="_self">Ch#9</a>
+				<a href="https://drive.google.com/file/d/1yf_6USnJJSbrN75IUgz_SP2VXB5qu_tw/view?usp=sharing" target="_self">Ch#11</a>
+				
+            
+            </div>
+        </div>
+
+        <!-- Dropdown for Chemistry 12 -->
+        <div class="dropdown">
+            <button class="dropbtn">12.CHEMISTRY</button>
+            <div class="dropdown-content">
+			    <a href="https://drive.google.com/file/d/1n-EFbP9FyY6BJxl28y673hd0qGHCOlqr/view?usp=sharing" target="_self">Ch#1</a>
+                <a href="https://drive.google.com/file/d/1IXsiSm0apO09xJtfEe07whaS93zyyCoo/view?usp=sharing" target="_self">Ch#2</a>
+                <a href="https://drive.google.com/file/d/1L7vm-BChf-_IyFMVB1L2RSqVehzjVa3U/view?usp=sharing" target="_self">Ch#3</a>
+				
+				<a href="https://drive.google.com/file/d/1i5buTEautdlUvkujcaHaorRU7E6HKSHY/view?usp=sharing" target="_self">Ch#5</a>
+				<a href="https://drive.google.com/file/d/1MHr-dhFP_xCEEOMTsFVrJESgqGg16Ij1/view?usp=sharing" target="_self">Ch#6</a>
+				<a href="https://drive.google.com/file/d/1Ef8oVzA1sf66bxnDOa0y9HmJgE297bX_/view?usp=sharing" target="_self">Ch#7 half</a>
+				<a href="https://drive.google.com/file/d/1Ef8oVzA1sf66bxnDOa0y9HmJgE297bX_/view?usp=sharing" target="_self">Ch#7 half</a>
+				<a href="https://drive.google.com/file/d/1gq0e4QUTCj740yYkgKUrOpY-_3_Fu1Um/view?usp=sharing" target="_self">Ch#8</a>
+                <a href="https://drive.google.com/file/d/1uDO2ixvJGfFe5891SzwalGL4z4o89LCJ/view?usp=sharing" target="_self">Ch#9</a>
+				<a href="https://drive.google.com/file/d/1koEb8ZtpMpGuopaWyUuGUXpj40aI4InC/view?usp=sharing" target="_self">Ch#10.11</a>
+
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

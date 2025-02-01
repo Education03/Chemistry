@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahidsiyal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Body and text styling */
+        body {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Title Styling */
+        h2 {
+            text-align: center;
+            color: crimson;
+            font-size: 3.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Image section styling */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2rem;
+            background-color: white;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        /* Left-to-right section */
+        .ltr-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-direction: row;
+        }
+
+        .ltr-section img {
+            margin-left: 2rem;
+            width: 100%; /* Make the images take up 100% of their container's width */
+            max-width: 30rem; /* Limit the max width of images */
+            height: auto; /* Maintain the aspect ratio */
+            object-fit: cover; /* Ensure images cover the space without stretching */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rtl-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-direction: row-reverse;
+        }
+
+        .rtl-section img {
+            margin-right: 2rem;
+            width: 100%; /* Make the images take up 100% of their container's width */
+            max-width: 30rem; /* Limit the max width of images */
+            height: auto; /* Maintain the aspect ratio */
+            object-fit: cover; /* Ensure images cover the space without stretching */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Navbar specific styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #e11d48; /* Crimson color */
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem; /* Increased font size for the logo */
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-grow: 1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            font-size: 1.25rem; /* Increased size for list items */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #9b1d38;
+            border-radius: 0.25rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .ltr-section,
+            .rtl-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Adjust image size for small screens */
+            .ltr-section img,
+            .rtl-section img {
+                max-width: 80%; /* Adjust for smaller screens */
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="ChemistryWithMe.html">ChemistryWithMe</a>
+        </div>
+        <ul>
+            <li><a href="HOME.html">HOME</a></li>
+            <li><a href="ONLINE-TEST.html">ONLINE TEST</a></li>
+            <li><a href="TEST-PDF.html">TEST PDF</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+            <li><a href="ABOUT.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content-container">
+	<h2 class="text-center text-4xl text-crimson">Learn ChemistryWithMe</h2>
+    </div>
+
+
+    <!-- Left-to-Right Section -->
+    <section class="ltr-section">
+        <div class="text-section">
+            <h3 class="text-red-500 text-2xl">ChemistryWithMe</h3>
+            <p class="text-lg">Chemistry helps us understand the world around us by explaining how substances interact, change, and form new compounds and much more....</p>
+        </div>
+        <img src="C:/Users/hp/Desktop/CENTRE/PIC/LL.jpg" alt="LL">
+    </section>
+
+    <!-- Right-to-Left Section -->
+    <section class="rtl-section">
+        <div class="text-section">
+            <h3 class="text-red-500 text-2xl">ChemistryWithMe</h3>
+            <p class="text-lg">Chemistry plays a key role in medicine by enabling the development of new drugs, treatments, and vaccines that save lives.and much more...</p>
+        </div>
+        <img src="C:/Users/hp/Desktop/CENTRE/PIC/KK.jpg" alt="KK">
+    </section>
+
+    <!-- Left-to-Right Section -->
+    <section class="ltr-section">
+        <div class="text-section">
+            <h3 class="text-red-500 text-2xl">ChemistryWithMe</h3>
+            <p class="text-lg">It contributes to environmental protection through the development of sustainable practices, renewable energy sources, and pollution control methods. & much more...</p>
+        </div>
+        <img src="C:/Users/hp/Desktop/CENTRE/PIC/HH.jpg" alt="HH">
+    </section>
+
+    <!-- Right-to-Left Section -->
+    <section class="rtl-section">
+        <div class="text-section">
+            <h3 class="text-red-500 text-2xl">ChemistryWithMe</h3>
+            <p class="text-lg">Chemistry improves food production by developing fertilizers, preservatives, and food safety techniques that ensure nutrition and quality & much more...</p>
+        </div>
+        <img src="C:/Users/hp/Desktop/CENTRE/PIC/CC.jpg" alt="CC">
+    </section>
+
+    <!-- Left-to-Right Section -->
+    <section class="ltr-section">
+        <div class="text-section">
+            <h3 class="text-red-500 text-2xl">ChemistryWithMe</h3>
+            <p class="text-lg">Chemistry is essential in creating everyday products like cleaning agents, cosmetics, and materials for clothing and electronics & much more...</p>
+        </div>
+        <img src="C:/Users/hp/Desktop/CENTRE/PIC/AA.jpg" alt="AA">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ChemistryWithMe. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
