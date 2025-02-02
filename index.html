@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZahidSiyal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-size: 1rem; /* 1rem is equal to 16px (default) */
+        line-height: 1.5;
+        background: linear-gradient(
+          to top right,
+          #80cbc4,
+          #e1bee7,
+          #80ddea,
+          #d1c4e9
+        );
+        text-align: center;
+
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navbar specific styles */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        padding-right: 3rem;
+        background-color: #e11d48; /* Crimson color */
+      }
+
+      .navbar .logo {
+        font-size: 2.5rem; /* Increased font size for the logo */
+        font-weight: bold;
+        color: white;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-grow: 1;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar li {
+        font-size: 1.25rem; /* Increased size for list items */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: #9b1d38;
+        border-radius: 0.25rem;
+      }
+      a:hover {
+        background-color: #9b1d38;
+        border-radius: 0.25rem;
+      }
+
+      /* Title Styling */
+      h2 {
+        text-align: center;
+        color: crimson;
+        font-size: 3.5rem;
+        margin-top: 2rem;
+      }
+
+      /* Image section styling */
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Section Styling */
+      section {
+        padding: 2rem;
+        background-color: white;
+        margin-top: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      /* Left-to-right section */
+      .ltr-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 2rem;
+        flex-direction: row;
+      }
+
+      .ltr-section img {
+        margin-left: 2rem;
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .subscribe-btn {
+        background-color: #ff4500; /* Orange-red color */
+        color: white;
+        padding: 20px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .subscribe-btn:hover {
+        background-color: #ff6347; /* Lighter red-orange on hover */
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .subscribe-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .subscribe-btn:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="ChemistryWithMe.html">ChemistryWithMe</a>
+      </div>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="../Chemistry/pages/onlineTest.html">Online Test</a></li>
+        <li><a href="../Chemistry/pages/TEST-PDF.html">TEST PDF</a></li>
+        <li><a href="../Chemistry/pages/CONTACT.html">CONTACT</a></li>
+        <li><a href="../Chemistry/pages/ABOUT.html">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div
+      class="flex flex-wrap items-center justify-between m-10 space-y-10 md:space-y-0"
+    >
+      <!-- Left-side text -->
+      <div class="w-full md:w-1/2 text-xl mt-10 md:mt-0 px-4">
+        <p class="text-center text-blue-900 text-2xl">WELCOME WELCOME</p>
+        <br />
+
+        <p class="text-center">LEARN CHEMISTRY WITH ME</p>
+        <br />
+        <p class="text-center text-red-500 text-2xl">
+          PROF: ZAHID HUSSAIN SIYAL
+        </p>
+        <br />
+        <p class="text-center text-red-500 text-2xl">CHEMISTRY EXPERT</p>
+        <br />
+        <p class="text-center text-black-500 text-2xl">
+          Don’t forget to subscribe my channel & share your thoughts in the
+          comments
+        </p>
+        <p class="text-center">Subscribe to my Channel</p>
+        <br />
+        <button
+          class="subscribe-btn"
+          onclick="window.location.href='https://youtube.com/@zahidhussainsiyal8034?si=QYpTR8L6Fut7N_I9'"
+        >
+          YouTube
+        </button>
+      </div>
+
+      <!-- Image aligned to the right -->
+
+      <!-- wrong  MISTAKE -->
+      <!-- <img src="C:/Users/hp/Desktop/CENTR/pic/DD.jpg" /> -->
+
+      <!-- image ka path is trh dete hain  -->
+      <img
+        src="../Chemistry/public/landing-page/showcase-65306_1920.jpg"
+        alt="Image related to chemistry learning"
+        class="w-full md:w-1/2 max-w-lg h-auto ml-auto"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+      <p>&copy; 2025 ChemistryWithMe All rights reserved.</p>
+    </footer>
+  </body>
+</html>

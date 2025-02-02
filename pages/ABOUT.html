@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zahid Siyal - Chemistry With Me</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Global Styles */
+      body {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #4fd1c5, #818cf8, #60a5fa);
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background-color: #e11d48;
+      }
+
+      .navbar .logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .navbar .logo a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navbar li a {
+        font-size: 1.25rem;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background 0.3s ease-in-out;
+      }
+
+      .navbar li a:hover {
+        background-color: #9b1d38;
+        border-radius: 0.25rem;
+      }
+
+      /* Responsive Navbar */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      /* Main Content */
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .content .text-section {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        font-size: 1.25rem;
+      }
+
+      .content img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #2563eb;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="ChemistryWithMe.html">Chemistry With Me</a>
+      </div>
+      <ul>
+        <li><a href="#" aria-label="Go to Home Page">HOME</a></li>
+        <li>
+          <a href="../pages/onlineTest.html" aria-label="Online Test"
+            >ONLINE TEST</a
+          >
+        </li>
+        <li>
+          <a href="../pages/TEST-PDF.html" aria-label="Download Test PDFs"
+            >TEST PDF</a
+          >
+        </li>
+        <li>
+          <a href="../pages/CONTACT.html" aria-label="Contact Us">CONTACT</a>
+        </li>
+        <li><a href="../pages/ABOUT.html" aria-label="About Us">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="text-section">
+        <h2 class="text-red-900 text-3xl font-bold mb-4">
+          LEARN CHEMISTRY WITH ME
+        </h2>
+        <p>
+          Welcome to a world of chemistry where learning is fun, exciting, and
+          full of discovery! As an expert chemistry teacher with 18 years of
+          experience, I believe every student has the potential to excel.
+        </p>
+        <br />
+        <p>
+          My teaching style is designed to make chemistry both approachable and
+          engaging—whether we’re in the lab or exploring theoretical concepts.
+          Every lesson is an opportunity for hands-on learning!
+        </p>
+        <br />
+        <p class="text-red-500 text-2xl font-semibold">
+          PROF: ZAHID HUSSAIN SIYAL
+        </p>
+        <p class="text-pink-500 text-xl">
+          I have 18 years of experience. (CHEMISTRY EXPERT)
+        </p>
+        <p class="text-red-500 text-xl font-semibold">
+          Feel free to contact me!
+        </p>
+
+        <!-- YouTube Subscribe Button -->
+        <button
+          class="mt-4 bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-6 rounded"
+          onclick="window.location.href='https://youtube.com/@zahidhussainsiyal8034?si=QYpTR8L6Fut7N_I9'"
+        >
+          Subscribe on YouTube
+        </button>
+      </div>
+
+      <!-- Image -->
+      <img
+        src="images/KK.jpg"
+        alt="Professor Zahid Hussain Siyal teaching chemistry"
+        class="shadow-lg"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Chemistry With Me. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
